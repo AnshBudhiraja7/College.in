@@ -27,7 +27,7 @@ const AdminHeader = (props) => {
         <div className="row">
           <div className="col-md-5 col-sm-6 hidden-xs top-wraper-left">
             <ul>
-              <li> <a href="mailto:support@yourdomain.com"><i className="fa fa-envelope-o" aria-hidden="true" />support@yourdomain.com</a></li>
+              <li> <Link to="mailto:support@yourdomain.com"><i className="fa fa-envelope-o" aria-hidden="true" />support@yourdomain.com</Link></li>
               <li><i className="fa fa-phone" aria-hidden="true" />+1-0123-456-789</li>
             </ul>
           </div>
@@ -35,13 +35,13 @@ const AdminHeader = (props) => {
             <ul className="pull-right">
               <li>
                 <ul className="header-social-icons">
-                  <li className="facebook"><a href="#" target="_blank"><i className="fa fa-facebook" /></a></li>
-                  <li className="twitter"><a href="#" target="_blank"><i className="fa fa-twitter" /></a></li>
-                  <li className="linkedin"><a href="#" target="_blank"><i className="fa fa-linkedin" /></a></li>
-                  <li className="pinterest"><a href="#" target="_blank"><i className="fa fa-pinterest" /></a></li>
-                  <li className="google-plus"><a href="#" target="_blank"><i className="fa fa-google-plus" /></a></li>
-                  <li className="youtube"><a href="#" target="_blank"><i className="fa fa-youtube" /></a></li>
-                  <li className="dribbble"><a href="#" target="_blank"><i className="fa fa-dribbble" /></a></li>
+                  <li className="facebook"><Link to="#" target="_blank"><i className="fa fa-facebook" /></Link></li>
+                  <li className="twitter"><Link to="#" target="_blank"><i className="fa fa-twitter" /></Link></li>
+                  <li className="linkedin"><Link to="#" target="_blank"><i className="fa fa-linkedin" /></Link></li>
+                  <li className="pinterest"><Link to="#" target="_blank"><i className="fa fa-pinterest" /></Link></li>
+                  <li className="google-plus"><Link to="#" target="_blank"><i className="fa fa-google-plus" /></Link></li>
+                  <li className="youtube"><Link to="#" target="_blank"><i className="fa fa-youtube" /></Link></li>
+                  <li className="dribbble"><Link to="#" target="_blank"><i className="fa fa-dribbble" /></Link></li>
                 </ul>
               </li>
             </ul>
@@ -51,7 +51,7 @@ const AdminHeader = (props) => {
     </div>
     <nav className="main-nav nav navbar fixed-top">
           <div className="logo">
-          <a className="navbar-brand" href="#"><img height={80} width={200} src={Obj.Image?Obj.Image:"images/download.png"} className="logo-change" alt="College Education" /></a> 
+          <Link className="navbar-brand" to="#"><img height={80} width={200} src={Obj.Image?Obj.Image:"images/download.png"} className="logo-change" alt="College Education" /></Link> 
           </div>
           <div
             className={
@@ -59,32 +59,32 @@ const AdminHeader = (props) => {
             }>
             <ul className="nav navbar-nav">
               <li>
-              <a href="/Dashboard" id={props.Dashboard}>Dashboard</a>
+              <Link to="/Dashboard" id={props.Dashboard}>Dashboard</Link>
               </li>
               <li>
-                <a href="/Team" id={props.Team}>Team</a>
+                <Link to="/Team" id={props.Team}>Team</Link>
               </li>
               <li>
-                <a href="/DisplayContact" id={props.DisplayContact}>Contacts</a>
+                <Link to="/DisplayContact" id={props.DisplayContact}>Contacts</Link>
               </li>
               <li className="dropdown">
-                  <a href="#" className="dropbtn" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Pages <i className="fa hover-inn fa-angle-down" /></a>
+                  <Link to="#" className="dropbtn" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Pages <i className="fa hover-inn fa-angle-down" /></Link>
                   <div className="dropdown-content">
-                  <a href="/Login" >Login</a>
-                  <a href="/Signup" >Sign Up</a>
-                  {/* <a href="#">Link 3</a> */}
+                  <Link to="/Login" >Login</Link>
+                  <Link to="/Signup" >Sign Up</Link>
+                  {/* <Link to="#">Link 3</Link> */}
                   </div>
               </li>
               <li>
-                <a id={props.Courses} href="/Courses">Courses</a>
+                <Link id={props.Courses} to="/Courses">Courses</Link>
               </li>
             </ul>
           </div>
           <div className="social-media">
             <div className="hamburger-menu">
-              <a href="#" onClick={() => setShowMediaIcons(!showMediaIcons)}>
+              <Link to="#" onClick={() => setShowMediaIcons(!showMediaIcons)}>
               &#9776;
-              </a>
+              </Link>
             </div>
           </div>
         </nav>

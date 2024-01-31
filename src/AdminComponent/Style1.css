@@ -32,10 +32,16 @@
 }
 .image-box
 { 
-    width: 30%;
+    /* width: 30%; */
     margin: 3%;
-    border: 1px solid black;
+    height: 40vh;
+    border: 1px solid #6962AD;
+    border-radius: 30px;
     padding: 10px 10px;
+}
+.image-box:hover
+{
+    box-shadow: 2px 5px 10px #6962AD;
 }
 .Image-block
 {
@@ -60,10 +66,6 @@
 {
     height: 100%;
     width: 100%;
-}
-.block{
-display: inline-flex;
-width: 100%;
 }
 .align
 {

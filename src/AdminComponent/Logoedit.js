@@ -14,7 +14,6 @@ const Logoedit = (props) => {
         SetObj(props.data)
       }
     },[])
-    console.log(props);
     var image=useRef()
     function Upload(e)
     {
